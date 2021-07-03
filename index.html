@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Hotel Booking - Tour Plan</title>
   </head>
   <body>
@@ -82,5 +84,150 @@
       </div>
       <!-- /.navbar-block -->
     </header>
+
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.breadcrumb -->
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="hotel-wrapper">
+              <div class="stars">
+                <img src="img/Star.svg" alt="Star" />
+                <img src="img/Star.svg" alt="Star" />
+                <img src="img/Star.svg" alt="Star" />
+                <img src="img/Star.svg" alt="Star" />
+                <img src="img/Star.svg" alt="Star" />
+              </div>
+              <!-- /.stars -->
+              <h1 class="hotel-name">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-info__offer">Flash Offer</span>
+            </div>
+            <p class="hotel-description hotel-info__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+              Free
+            </p>
+          </div>
+          <!-- /.hotel-info__text -->
+          <div class="rating hotel-info__rating">
+            <span class="rating__text">User Rattings</span>
+            <span class="rating__counter">4.5/5</span>
+          </div>
+          <!-- /.hotel-info__rating -->
+        </div>
+        <!-- hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider hotel-slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/Rectangle 5.jpg"
+                    alt="tour-image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/Rectangle 5.jpg"
+                    alt="tour-image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-slide__image"
+                    src="img/Rectangle 5.jpg"
+                    alt="tour-image"
+                  />
+                </div>
+                ...
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="slider-button slider-button--prev"></div>
+              <div class="slider-button slider-button--next"></div>
+            </div>
+            <!-- swiper-container -->
+          </div>
+          <!-- slider -->
+
+          <div class="hotel-right">
+            <div class="booking">
+              <div class="booking__info">
+                <div class="booking__price">
+                  <span class="booking__start">price starts as</span>
+                  <strong class="booking__pricetag">$ 8,500</strong>
+                  <span class="booking__per-room">per room / night</span>
+                </div>
+                <!-- /.booking-price -->
+
+                <div class="booking__room">
+                  <div class="booking__text">
+                    <img
+                      src="img/user.svg"
+                      alt="Icon: User"
+                      class="booking__icon"
+                    />
+                    <span class="booking__description">2 x Guests</span>
+                  </div>
+                  <!-- booking__text -->
+                  <div class="booking__text">
+                    <img
+                      src="img/home.svg"
+                      alt="Icon: Home"
+                      class="booking__icon"
+                    />
+                    <span class="booking__description">1 x Room</span>
+                  </div>
+                  <!-- booking__text -->
+                </div>
+                <!-- /.booking-room -->
+              </div>
+              <!-- /.booking__info -->
+              <div class="call-center">
+                <span class="call-center__text">Quick Booking</span>
+                <a class="call-center__number" href="tel:12100">
+                  <img src="img/phone-call.svg" alt="Icon: Number" />
+                  <span class="call-center__num">12100</span>
+                </a>
+              </div>
+              <!-- /.call-center -->
+              <button class="button booking__button">View Other Options</button>
+            </div>
+            <!-- /.booking -->
+            <div class="map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A593c48fb2f376ceb8206fd30ef0f5430eab4798672e0c4d9896af78a1f5600e0&amp;source=constructor"
+                width="100%"
+                height="213"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <!-- /.map -->
+          </div>
+        </div>
+        <!-- /.hotel-grid -->
+      </div>
+      <!-- conteiner -->
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
