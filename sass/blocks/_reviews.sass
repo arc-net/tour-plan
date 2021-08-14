@@ -1,0 +1,88 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-slider
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: rgba(236, 31, 70, 0.2)
+      border-radius: 8px
+      margin: 45px auto 0
+      width: 730px
+      padding: 0 62px 30px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 70px
+        height: 47px
+        left: 62px
+        top: 13px
+        background-image: url(../img/cleft.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        width: 70px
+        height: 47px
+        right: 60px
+        bottom: 113px
+        background-image: url(../img/cright.svg)
+        background-repeat: no-repeat
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-top: -45px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: #333333
+      margin: auto
+      width: 537px
+
+    &__username
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      color: #000000
+    &__button
+      z-index: 99
+      top: 50%
+      width: 30px
+      height: 30px
+      position: absolute
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transporent
+      &--next
+        right: 200px
+        background-image: url(../img/vector-right.svg)
+      &--prev
+        left: 200px
+        background-image: url(../img/vector-left.svg)
